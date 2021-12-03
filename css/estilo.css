@@ -1,0 +1,105 @@
+body {
+    background-color: #d9d9d9;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    padding: 10px;
+}
+
+.header .logo {
+    float: left;
+
+    height: 100px;
+    margin-left: 50px;
+}
+
+.header h1 {
+    /* 2rem significa multiplicar por 2 o tamanho da fonte do html  */
+    font: bold 2rem 'Comic Sans MS', Arial, sans-serif;
+    padding-top: 10px;
+    height: 100px;
+    text-align: center;
+
+    margin-left: 100px;
+}
+
+.header h1 small {
+    /* 0.5em significa multiplicar por 0.5 o tamanho da fonte do pai  */
+    font-size: 0.5em;
+    font-weight: normal;
+    display: block;
+}
+
+.body {
+    
+}
+
+.body::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu {
+    float: left;
+    width: 250px;
+    background-color: #f5a662;
+}
+
+.menu * {
+    display: block;
+}
+
+.menu li {
+}
+
+.menu .link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #543d3d;
+    font-weight: bold;
+}
+
+.menu span {
+    cursor: default;
+}
+
+.menu a.link:hover,
+.menu span.link {
+    background-color: #ed6494;
+    color: #f5dec4;
+}
+
+.menu.dir {
+    background-color: transparent;
+
+    float: right;
+    width: 150px;
+}
+
+.menu.dir li {
+    margin: 5px 0;
+}
+
+.menu.dir .banner {
+    border: 1px solid #543d3d;
+}
+
+.menu.dir .banner:hover {
+    opacity: 0.5;
+}
+
+.produtos {
+    margin-left: 270px;
+}
+
+.produtos.home {
+    margin-right: 170px;
+}

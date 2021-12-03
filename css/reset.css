@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px Arial, sans-serif;
+}
+
+p {
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
