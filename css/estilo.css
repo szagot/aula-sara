@@ -38,7 +38,6 @@ body {
 }
 
 .body {
-    
 }
 
 .body::after {
@@ -97,9 +96,22 @@ body {
 }
 
 .produtos {
-    margin-left: 270px;
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 0;
 }
 
 .produtos.home {
     margin-right: 170px;
+}
+
+.img-dir {
+    float: right;
+    width: 150px;
+    border: 2px solid #fff;
+    outline: 3px solid #ed6494;
+    background-color: #f5a662;
+    padding: 3px;
+    margin: 20px;
+    margin-right: 0;
 }
