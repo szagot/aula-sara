@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            .flex-container{
+                display: flex;
+                /* row (padrão) | row-reverse | column | column-reverse */
+                flex-direction: row;
+                /* nowrap (padrão) | wrap | wrap-reverse */
+                flex-wrap: wrap;
+                /* flex-start (padrão) | flex-end | center | space-between | space-around | space-evenly */
+                justify-content: space-evenly;
+                /* stretch (padrão) | flex-start | flex-end | center | baseline */
+                align-items: flex-start;
+                /* stretch (padrão) | flex-start | flex-end | center | space-between | space-around | space-evenly */
+                align-content: stretch;
+
+                height: 700px;
+                border: 5px solid #666;
+            }
+
+            .flex-container div {
+
+                color:#fff;
+                background-color: red;
+                min-width: 200px;
+                margin: 10px;
+            }
+
+            .flex-container div:nth-child(1) {
+                order: 3;
+            }
+            .flex-container div:nth-child(2) {
+                order: 1;
+                align-self: stretch;
+            }
+            .flex-container div:nth-child(3) {
+                order: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2<br>teste<br>teste2</div>
+            <div>3<br>teste<br></div>
+        </div>
+    </body>
+</html>

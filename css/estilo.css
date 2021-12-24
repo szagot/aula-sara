@@ -5,6 +5,7 @@
 
     /* Pelata de Cores */
     --white: #fff;
+    --fonte-clara: #999;
     --fundo: #d9d9d9;
 }
 
@@ -128,17 +129,17 @@ body {
 
 /* PRODUTOS */
 .produtos .lista {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: var(--tam-margem) calc(var(--tam-margem-inv) / 2);
 }
 
 .produtos .produto {
     display: block;
-    float: left;
-    width: 25%;
-    margin: 0;
-    padding: calc(var(--tam-margem) / 2);
-    padding-top: 0;
+    width: 20%;
+    min-width: 200px;
+    margin: calc(var(--tam-margem) / 2);
 }
 
 .produtos .produto .nome {
@@ -149,4 +150,20 @@ body {
     height: 34px;
     line-height: 17px;
     overflow: hidden;
+}
+
+.produtos .produto .precos {
+    margin-bottom: calc(var(--tam-margem) / 2);
+    height: 30px;
+}
+
+.produtos .produto .precos p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 15px;
+}
+
+.produtos .produto .precos p.de {
+    color: var(--fonte-clara);
+    text-decoration: line-through;
 }
