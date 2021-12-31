@@ -1,0 +1,38 @@
+@media (max-width: 1170px) {
+    .produtos .produto {
+        width: calc(33.3% - var(--tam-margem));
+    }
+}
+
+@media (max-width: 948px) {
+    .produtos .produto {
+        width: calc(50% - var(--tam-margem));
+    }
+}
+
+@media (max-width: 728px) {
+    .produtos .produto {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 458px) {
+    .menu {
+        display: none;
+    }
+    .produtos {
+        margin-left: 0;
+    }
+    h1 {
+        display: none;
+    }
+    .header {
+        text-align: center;
+    }
+    .header .logo {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -131,13 +131,13 @@ body {
 .produtos .lista {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: var(--tam-margem) calc(var(--tam-margem-inv) / 2);
 }
 
 .produtos .produto {
     display: block;
-    width: 20%;
+    width: calc(25% - var(--tam-margem));
     min-width: 200px;
     margin: calc(var(--tam-margem) / 2);
 }
